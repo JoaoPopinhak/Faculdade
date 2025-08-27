@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+}
+
+.body{
+    display: flex;
+    justify-content:space-around;
+}
+.cabprofile{
+    background-color: aqua;
+    width: 300px;
+}
+.main{
+    background-color: blue;
+}
