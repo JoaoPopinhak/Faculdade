@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../CSS/formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./Imagem/assets/favicon_k_blue.png" alt="icon">
+</head>
+
+<body class="body">
+    <main class="wrapper-login">
+        <div class="imagem">
+            <img class="imagemform"
+                src="../imagens/freepik__the-style-is-candid-image-photography-with-natural__60294.jpeg"
+                alt="Imagem home">
+        </div>
+        <article class="formulario">
+            <section class="container">
+                <nav>
+                    <a href="../curriculojmp.html">voltar</a>
+
+                </nav>
+                <header class="cabeçalho">
+                    <h2 class="titulo">Preencha o formulário</h2>
+                </header>
+                <section class="inputscontainer">
+                    <article class="colum">
+                        <input class="input" type="text" placeholder="Digite seu nome">
+                        <label class="label" for="data"> Digite sua data de nascimento</label>
+                        <input class="input" type="date">
+                        <label class="label" for="email"> Digite seu E-mail</label>
+                        <input class="input" type="email">
+                        <label class="label" for="contato"> Digite seu contato</label>
+                        <input class="input" type="tel">
+                        <p class="label">Qual sua comida preferida?</p>
+                        <select>
+                            <option>Pizza</option>
+                            <option>Hámburguer</option>
+                            <option>Sushi</option>
+                        </select>
+                        <label class="label" for="esporte">Qual seu motoresporte favorito?</label>
+                        <input class="input" type="text" list="listaesporte">
+                        <datalist id="listaesporte">
+                            <option value="F1">F1</option>
+                            <option value="moto gp">Moto GP</option>
+                            <option value="rally">Rally</option>
+                            <option value="drift">Drift</option>
+                        </datalist>
+                        <label class="label" for="">Valor investido</label>
+                        <input class="input" type="range" min="0" max="1000" step="100">
+                    </article>
+                    <article class="colum">
+                        <label class="label" for="cor">Informe sua cor favorita:</label>
+                        <input class="input" type="color">
+
+                        <div class="idioma">
+                            <p class="label">Fluente em:</p><br>
+                            <input class="input" type="checkbox" name="Inglês">
+                            <label class="label" for="">Inglês</label><br>
+                            <input class="input" type="checkbox" name="Inglês">
+                            <label class="label" for="">Espanhol</label><br>
+                            <input class="input" type="checkbox" name="Inglês">
+                            <label class="label" for="">Francês</label><br>
+                            <input class="input" type="checkbox" name="Inglês">
+                            <label class="label" for="">Alemão</label><br>
+                            <input class="input" type="checkbox" name="Inglês">
+                            <label class="label" for="">Nihongo</label><br>
+                        </div>
+                        <div>
+                            <p>Genêro</p><br>
+                            <input class="input" type="radio" name="gen" value="M">
+                            <label class="label" for="">Masculino</label><br>
+                            <input class="input" type="radio" name="gen" value="F">
+                            <label class="label" for="">Femenino</label><br>
+                            <input class="input" type="radio" name="gen" value="?">
+                            <label class="label" for="">Todes</label><br>
+
+                        </div>
+
+                        <label class="label" for="obs">Descreva o motivo do contato</label>
+                        <input class="input" type="obs">
+                    </article>
+
+
+                </section>
+                <button class="buttons">Enviar</button>
+            </section>
+    </main>
+</body>
+
+</html>
