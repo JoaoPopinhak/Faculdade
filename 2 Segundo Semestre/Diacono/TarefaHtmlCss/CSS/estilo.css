@@ -19,21 +19,25 @@ p {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    gap: 7.1vh;
 }
 
 #topo {
     background-color: black;
     height: 20vh;
     width: 100%;
-    display: flex;
-    align-items: center;
 }
 
+#nav {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
 
 ul {
-    padding: 0px;
     display: flex;
+    padding: 0;
 }
 
 .titleNav {
@@ -57,6 +61,7 @@ li:hover {
 #principal {
     width: 90vw;
     padding: 15px;
+    margin-top: 15px;
     background-color: rgb(4, 27, 48);
     border-radius: 25px;
 }
@@ -64,12 +69,14 @@ li:hover {
 #aux {
     width: 90vw;
     padding: 15px;
+    margin-top: 15px;
     background-color: rgb(4, 27, 48);
     border-radius: 25px;
 
 }
 
 #rodape {
+    margin-top: 27px;
     height: 15vh;
     width: 100%;
     background-color: black;
