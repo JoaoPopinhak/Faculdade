@@ -1,9 +1,12 @@
 #include <stdio.h>
+#include<string.h>
 
 #define ARRAYS 15
 
 void addUser();
 void mostrarUser();
+void delUser();
+void editUser();
 
 struct Usuario{
 	char nome[30];
@@ -13,7 +16,6 @@ struct Usuario{
 
 struct Usuario listUsers[ARRAYS];
 int numUsers=0;
-
 
 int main(){
 	int opcao;
@@ -29,8 +31,10 @@ int main(){
 				addUser();
 			break;
 			case 2:
+				editUser();
 			break;
 			case 3:
+				delUser();
 			break;	
 			case 4:
 				mostrarUser();
@@ -64,11 +68,44 @@ void addUser(){
 }
 
 void editUser(){
+	int i, indicie;
 	
+	printf("Digite o usuario a ser editado\n");
+	scanf("%i", & indicie);
+	
+	if(indicie < 0 || indicie >=numUsers){
+		printf("Erro");
+	}
+	
+	printf("Digite o novo nome: \n");
+	scanf("%s", listUsers[indicie].nome);
+	
+	printf("Digite a nova idade: \n");
+	scanf("%i", &listUsers[indicie].idade);
+	
+	printf("Digite a nova altura: \n");
+	scanf("%f", &listUsers[indicie].altura);	
+	
+	printf("Usuario editado\n");	
 }
 
 void delUser(){
+	int usuarioEscolhido;
+	mostrarUser();
 	
+	printf("Digite o usuario que deseja excluir\n");
+	scanf("%i", & usuarioEscolhido);
+	
+	if(usuarioEscolhido < 0 || usuarioEscolhido >= numUsers){
+		printf("Erro");
+	}
+	
+	for(int i = usuarioEscolhido; i < numUsers-1; i++){
+		strcpy(listUsers[i].nome, listUsers[i+1].nome);
+		numUsers--;
+	}
+	
+	printf("Usuario excluido\n");
 }
 
 void mostrarUser(){
