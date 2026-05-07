@@ -59,7 +59,7 @@ public class JanelaLogin extends JFrame implements ActionListener{
 	    entrarButton.setPreferredSize(new Dimension(100, 25));
 	    entrarButton.addActionListener(this);
 	    
-	    lembrarSenhaCheck = new JCheckBox("Lembrar senha");
+	    lembrarSenhaCheck = new JCheckBox("Lembrar usuário");
 	    
 	    boolean lembrar = validarLembrarSenha();
 	    lembrarSenhaCheck.setSelected(lembrar);
